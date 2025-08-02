@@ -142,3 +142,8 @@ nav a:hover {
 footer {
   animation: fadeIn 1.5s ease-in;
 }
+
+.service-grid img {
+  max-height: 180px;
+  object-fit: cover;
+}

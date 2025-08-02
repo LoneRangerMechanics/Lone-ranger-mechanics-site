@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact - Lone Ranger Mechanics</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Lone Ranger Mechanics LLC</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="book.html">Book Now</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="container">
-    <h2>Contact Us</h2>
-    <p>Have questions or need help fast? Reach out to us:</p>
-    <ul>
-      <li><strong>Email:</strong> sales@lonerangermechanics.com</li>
-      <li><strong>Phone:</strong> 405-999-2799 or 405-999-5573</li>
-      <li><strong>Hours:</strong> Mon–Sat, 7:00 AM – 7:00 PM</li>
-    </ul>
-  </main>
-  <footer>
-    <div class="container">
-      <p>Contact us: sales@lonerangermechanics.com | 405-999-2799 | 405-999-5573</p>
-      <p>&copy; 2025 Lone Ranger Mechanics LLC</p>
-    </div>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Lone Ranger Mechanics for prompt, mobile auto repair. Reach us via email, phone or send a message through our contact form." />
+    <meta name="keywords" content="contact mobile mechanic, auto repair support, mechanic phone number" />
+    <title>Contact – Lone Ranger Mechanics</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Lone Ranger Mechanics LLC</h1>
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions or need help fast? Reach out to us:</p>
+      <ul>
+        <li><strong>Email:</strong> sales@lonerangermechanics.com</li>
+        <li><strong>Phone:</strong> 405-999-2799 or 405-999-5573</li>
+        <li><strong>Hours:</strong> Mon–Sat, 7:00 AM – 7:00 PM</li>
+      </ul>
+
+      <h3>Send us a message</h3>
+      <form name="contact" method="POST" data-netlify="true" class="contact-form">
+        <input type="hidden" name="form-name" value="contact" />
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Contact us: sales@lonerangermechanics.com | 405-999-2799 | 405-999-5573</p>
+        <p>&copy; 2025 Lone Ranger Mechanics LLC</p>
+      </div>
+    </footer>
+  </body>
 </html>
+

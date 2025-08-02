@@ -83,3 +83,62 @@ footer {
   border-top: 2px solid #c53d3d;
   margin-top: 40px;
 }
+
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Smooth fade on body load */
+body {
+  animation: fadeIn 1s ease-in;
+  scroll-behavior: smooth;
+}
+
+/* Hero entrance */
+.hero h2, .hero p, .hero .btn {
+  animation: fadeInUp 1s ease-in;
+}
+
+/* Button enhancements */
+.hero .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #c53d3d;
+  transition: 0.3s ease-in-out;
+}
+
+/* Nav link hover */
+nav a {
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Service cards hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: #f0e6d2;
+}
+
+/* Footer fade-in */
+footer {
+  animation: fadeIn 1.5s ease-in;
+}
